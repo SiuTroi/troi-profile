@@ -32,11 +32,11 @@ const Navbar = () => {
   return (
     <div className='fixed z-50 w-full left-0 bottom-0 lg:relative lg:w-1/6'> 
         <div className='flex justify-between p-4 bg-[#a2b8e7b3] rounded-3xl lg:flex-col 
-        gap-4 lg:bg-[#c3ebf8] lg:pt-8 lg:pb-36'>
+        gap-1 sm:gap-4 lg:bg-[#c3ebf8] lg:pt-8 lg:pb-36'>
             {navBars.map(item => (
-                <NavLink to={item.route} key={item.title} className="flex flex-col items-center gap-2 min-w-[20%] p-2 bg-white rounded-3xl nav">
+                <NavLink to={item.route} key={item.title} className="flex flex-col justify-center items-center gap-2 min-w-[20%] p-2 bg-white rounded-3xl nav">
                     {item.icon}
-                    <h3 className='text-base'>{item.title}</h3>
+                    <h3 className='text-base text-center'>{item.title}</h3>
                 </NavLink>
             ))}
         </div>
